@@ -1,0 +1,224 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../yolov2_xilinx_fpga-100MHzTn2Tm32Tr26Tc26/hls/main.cpp in debug mode
+   Compiling ../../../../../yolov2_xilinx_fpga-100MHzTn2Tm32Tr26Tc26/hls/cnn.cpp in debug mode
+   Generating csim.exe
+YOLOv2 TEST Begin
+[0]person
+[1]bicycle
+[2]car
+[3]motorbike
+[4]aeroplane
+[5]bus
+[6]train
+[7]truck
+[8]boat
+[9]traffic light
+[10]fire hydrant
+[11]stop sign
+[12]parking meter
+[13]bench
+[14]bird
+[15]cat
+[16]dog
+[17]horse
+[18]sheep
+[19]cow
+[20]elephant
+[21]bear
+[22]zebra
+[23]giraffe
+[24]backpack
+[25]umbrella
+[26]handbag
+[27]tie
+[28]suitcase
+[29]frisbee
+[30]skis
+[31]snowboard
+[32]sports ball
+[33]kite
+[34]baseball bat
+[35]baseball glove
+[36]skateboard
+[37]surfboard
+[38]tennis racket
+[39]bottle
+[40]wine glass
+[41]cup
+[42]fork
+[43]knife
+[44]spoon
+[45]bowl
+[46]banana
+[47]apple
+[48]sandwich
+[49]orange
+[50]broccoli
+[51]carrot
+[52]hot dog
+[53]pizza
+[54]donut
+[55]cake
+[56]chair
+[57]sofa
+[58]pottedplant
+[59]bed
+[60]diningtable
+[61]toilet
+[62]tvmonitor
+[63]laptop
+[64]mouse
+[65]remote
+[66]keyboard
+[67]cell phone
+[68]microwave
+[69]oven
+[70]toaster
+[71]sink
+[72]refrigerator
+[73]book
+[74]clock
+[75]vase
+[76]scissors
+[77]teddy bear
+[78]hair drier
+[79]toothbrush
+Input img:person.jpg
+img w=640,h=424,c=3
+sized img w=416,h=416,c=3
+[ 0 inputQ]=14
+[ 1 inputQ]=10
+[ 2 inputQ]=10
+[ 3 inputQ]=10
+[ 4 inputQ]=10
+[ 5 inputQ]=11
+[ 6 inputQ]=11
+[ 7 inputQ]=10
+[ 8 inputQ]=11
+[ 9 inputQ]=11
+[10 inputQ]=10
+[11 inputQ]=10
+[12 inputQ]=10
+[13 inputQ]=10
+[14 inputQ]=11
+[15 inputQ]= 9
+[16 inputQ]=11
+[17 inputQ]=10
+[18 inputQ]= 9
+[19 inputQ]=11
+[20 inputQ]=10
+[21 inputQ]=10
+[22 inputQ]=11
+[23 inputQ]=10
+[ 0 weightQ]=10
+[ 1 weightQ]=15
+[ 2 weightQ]=15
+[ 3 weightQ]=13
+[ 4 weightQ]=15
+[ 5 weightQ]=15
+[ 6 weightQ]=14
+[ 7 weightQ]=15
+[ 8 weightQ]=15
+[ 9 weightQ]=14
+[10 weightQ]=15
+[11 weightQ]=14
+[12 weightQ]=15
+[13 weightQ]=15
+[14 weightQ]=14
+[15 weightQ]=15
+[16 weightQ]=14
+[17 weightQ]=14
+[18 weightQ]=15
+[19 weightQ]=15
+[20 weightQ]=15
+[21 weightQ]=15
+[22 weightQ]=14
+[ 0 betaQ]=11
+[ 1 betaQ]=12
+[ 2 betaQ]=11
+[ 3 betaQ]=12
+[ 4 betaQ]=12
+[ 5 betaQ]=12
+[ 6 betaQ]=12
+[ 7 betaQ]=12
+[ 8 betaQ]=12
+[ 9 betaQ]=13
+[10 betaQ]=12
+[11 betaQ]=12
+[12 betaQ]=13
+[13 betaQ]=13
+[14 betaQ]=13
+[15 betaQ]=12
+[16 betaQ]=12
+[17 betaQ]=12
+[18 betaQ]=15
+[19 betaQ]=13
+[20 betaQ]=14
+[21 betaQ]=13
+[22 betaQ]=13
+Layer[ 0]: outputMemory: 5537792;BN=1;Activation=7;conv     32  3 x 3 / 1   416 x 416 x   3   ->   416 x 416 x  32  0.299 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=16,cLoops=16,mLoops=1,nLoops=2
+Layer[ 1]: outputMemory: 1384448;max          2 x 2 / 2   416 x 416 x  32   ->   208 x 208 x  32
+Layer[ 2]: outputMemory: 2768896;BN=1;Activation=7;conv     64  3 x 3 / 1   208 x 208 x  32   ->   208 x 208 x  64  1.595 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=8,cLoops=8,mLoops=2,nLoops=16
+Layer[ 3]: outputMemory:  692224;max          2 x 2 / 2   208 x 208 x  64   ->   104 x 104 x  64
+Layer[ 4]: outputMemory: 1384448;BN=1;Activation=7;conv    128  3 x 3 / 1   104 x 104 x  64   ->   104 x 104 x 128  1.595 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=4,cLoops=4,mLoops=4,nLoops=32
+Layer[ 5]: outputMemory:  692224;BN=1;Activation=7;conv     64  1 x 1 / 1   104 x 104 x 128   ->   104 x 104 x  64  0.177 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=4,cLoops=4,mLoops=2,nLoops=64
+Layer[ 6]: outputMemory: 1384448;BN=1;Activation=7;conv    128  3 x 3 / 1   104 x 104 x  64   ->   104 x 104 x 128  1.595 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=4,cLoops=4,mLoops=4,nLoops=32
+Layer[ 7]: outputMemory:  346112;max          2 x 2 / 2   104 x 104 x 128   ->    52 x  52 x 128
+Layer[ 8]: outputMemory:  692224;BN=1;Activation=7;conv    256  3 x 3 / 1    52 x  52 x 128   ->    52 x  52 x 256  1.595 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=2,cLoops=2,mLoops=8,nLoops=64
+Layer[ 9]: outputMemory:  346112;BN=1;Activation=7;conv    128  1 x 1 / 1    52 x  52 x 256   ->    52 x  52 x 128  0.177 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=2,cLoops=2,mLoops=4,nLoops=128
+Layer[10]: outputMemory:  692224;BN=1;Activation=7;conv    256  3 x 3 / 1    52 x  52 x 128   ->    52 x  52 x 256  1.595 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=2,cLoops=2,mLoops=8,nLoops=64
+Layer[11]: outputMemory:  173056;max          2 x 2 / 2    52 x  52 x 256   ->    26 x  26 x 256
+Layer[12]: outputMemory:  346112;BN=1;Activation=7;conv    512  3 x 3 / 1    26 x  26 x 256   ->    26 x  26 x 512  1.595 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=16,nLoops=128
+Layer[13]: outputMemory:  173056;BN=1;Activation=7;conv    256  1 x 1 / 1    26 x  26 x 512   ->    26 x  26 x 256  0.177 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=8,nLoops=256
+Layer[14]: outputMemory:  346112;BN=1;Activation=7;conv    512  3 x 3 / 1    26 x  26 x 256   ->    26 x  26 x 512  1.595 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=16,nLoops=128
+Layer[15]: outputMemory:  173056;BN=1;Activation=7;conv    256  1 x 1 / 1    26 x  26 x 512   ->    26 x  26 x 256  0.177 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=8,nLoops=256
+Layer[16]: outputMemory:  346112;BN=1;Activation=7;conv    512  3 x 3 / 1    26 x  26 x 256   ->    26 x  26 x 512  1.595 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=16,nLoops=128
+Layer[17]: outputMemory:   86528;max          2 x 2 / 2    26 x  26 x 512   ->    13 x  13 x 512
+Layer[18]: outputMemory:  173056;BN=1;Activation=7;conv   1024  3 x 3 / 1    13 x  13 x 512   ->    13 x  13 x1024  1.595 BFLOPs
+TR=13,TC=13,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=32,nLoops=256
+Layer[19]: outputMemory:   86528;BN=1;Activation=7;conv    512  1 x 1 / 1    13 x  13 x1024   ->    13 x  13 x 512  0.177 BFLOPs
+TR=13,TC=13,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=16,nLoops=512
+Layer[20]: outputMemory:  173056;BN=1;Activation=7;conv   1024  3 x 3 / 1    13 x  13 x 512   ->    13 x  13 x1024  1.595 BFLOPs
+TR=13,TC=13,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=32,nLoops=256
+Layer[21]: outputMemory:   86528;BN=1;Activation=7;conv    512  1 x 1 / 1    13 x  13 x1024   ->    13 x  13 x 512  0.177 BFLOPs
+TR=13,TC=13,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=16,nLoops=512
+Layer[22]: outputMemory:  173056;BN=1;Activation=7;conv   1024  3 x 3 / 1    13 x  13 x 512   ->    13 x  13 x1024  1.595 BFLOPs
+TR=13,TC=13,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=32,nLoops=256
+Layer[23]: outputMemory:  173056;BN=1;Activation=7;conv   1024  3 x 3 / 1    13 x  13 x1024   ->    13 x  13 x1024  3.190 BFLOPs
+TR=13,TC=13,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=32,nLoops=512
+Layer[24]: outputMemory:  173056;BN=1;Activation=7;conv   1024  3 x 3 / 1    13 x  13 x1024   ->    13 x  13 x1024  3.190 BFLOPs
+TR=13,TC=13,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=32,nLoops=512
+Layer[25]: outputMemory:  346112;route  16
+Layer[26]: outputMemory:   43264;BN=1;Activation=7;conv     64  1 x 1 / 1    26 x  26 x 512   ->    26 x  26 x  64  0.044 BFLOPs
+TR=26,TC=26,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=2,nLoops=256
+Layer[27]: outputMemory:   43264;reorg              / 2    26 x  26 x  64   ->    13 x  13 x 256
+Layer[28]: outputMemory:  216320;route  27 24
+Layer[29]: outputMemory:  173056;BN=1;Activation=7;conv   1024  3 x 3 / 1    13 x  13 x1280   ->    13 x  13 x1024  3.987 BFLOPs
+TR=13,TC=13,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=32,nLoops=640
+Layer[30]: outputMemory:   71825;BN=0;Activation=3;conv    425  1 x 1 / 1    13 x  13 x1024   ->    13 x  13 x 425  0.147 BFLOPs
+TR=13,TC=13,TM=32,TN=2,rLoops=1,cLoops=1,mLoops=14,nLoops=512
+Layer[31]: outputMemory:   71825;Detection
+YOLO_layer:outputs=71825,yolo_layer_123123.txt
+SUM_GOP=29.4642
+person.jpg: Predicted in 7829.000000 seconds.
+845
+person: 77%
+dog: 76%
+horse: 90%
+YOLOv2 TEST End
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
