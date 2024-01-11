@@ -6,9 +6,9 @@ Vivado 2021.2 for block design, Vitis HLS 2021.2 for ip core synthesizing
 
 # Problems in Implementaion
 
-## Long C-sim Time
+## Long C-sim Times
 
-## M-AXI Number of Synthesized Ip Core
+## M-AXI Number of Synthesized IP Core
 
 ## Address Allocation in Block Design
 
@@ -16,4 +16,4 @@ Vivado 2021.2 for block design, Vitis HLS 2021.2 for ip core synthesizing
 
 pynq.allocate will be used to allocate the buffer.
 
-## Address Mismatchs between the Synthesized Ip Core and the ipynq File
+## Address Mismatchs between the Synthesized IP Core and the ipynq File
