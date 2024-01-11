@@ -16,9 +16,9 @@ Vivado 2021.2 for block design, Vitis HLS 2021.2 for ip core synthesizing
 
 ## Address Allocation in Block Design
 
-![Alt text](pic/bd_addr0.png)
-
 ![Alt text](pic/bd_addr1.png)
+
+![Alt text](pic/bd_addr0.png)
 
 ## API to Allocate Buffers
 
