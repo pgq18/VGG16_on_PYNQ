@@ -48,6 +48,13 @@ img_base_buffer = allocate(shape=(4194304,), dtype=np.int32)
 print("16M",img_base_buffer.physical_address)
 IMG_MEM = img_base_buffer.physical_address
 ```
+```python
+##============================================
+#			clean  up
+#============================================
+# xlnk.xlnk_reset()
+del weight_base_buffer, bate_base_buffer, img_base_buffer
+```
 
 ## Address Offset Mismatchs between the Synthesized IP Core and the ipynq File
 
