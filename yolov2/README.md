@@ -56,7 +56,7 @@ IMG_MEM = img_base_buffer.physical_address
 del weight_base_buffer, bate_base_buffer, img_base_buffer
 ```
 
-## Address Offset Mismatchs between the Synthesized IP Core and the ipynq File
+## Address Offset Mismatch between the Synthesized IP Core and the ipynq File
 
 ![Alt text](pic/offset.png)
 ```python
